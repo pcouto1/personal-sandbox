@@ -1,0 +1,30 @@
+{
+  "objectType" : "DataDrivenStorage",
+  "id" : "xy8q16pg773e",
+  "title" : "Accounts",
+  "description" : null,
+  "objectType" : null,
+  "variableRunDataList" : [ {
+    "active" : true,
+    "data" : [ {
+      "key" : "Label",
+      "value" : "Freign"
+    } ],
+    "name" : "test case 1"
+  }, {
+    "active" : true,
+    "data" : [ {
+      "key" : "Label",
+      "value" : "Homerce"
+    } ],
+    "name" : "test case 2"
+  }, {
+    "active" : true,
+    "data" : [ {
+      "key" : "Label",
+      "value" : "Solity"
+    } ],
+    "name" : "test case 3"
+  } ],
+  "type" : "DATA_DRIVEN"
+}

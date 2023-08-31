@@ -1,0 +1,84 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "6k76336oxpx6",
+  "title" : "Patterns",
+  "description" : null,
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ ],
+  "actionList" : [ {
+    "id" : "2d22448e-b0cd-42d8-b5d3-b79c11b08474",
+    "title" : "Dropdown",
+    "variableList" : [ {
+      "id" : "189db46f-05c9-4779-b395-60a7ac332b97",
+      "name" : "DropdownOption",
+      "allowedOptions" : [ ],
+      "type" : "TEXT"
+    }, {
+      "id" : "42ad2a12-893d-4252-9529-6d825a4b9e90",
+      "name" : "DropdownId",
+      "allowedOptions" : [ ],
+      "type" : "TEXT"
+    } ],
+    "steps" : [ {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Mouse",
+        "subAction" : "Click",
+        "options" : [ ],
+        "object" : {
+          "type" : "pageScanner",
+          "object" : "//*[@id=\"${DropdownId}\"]/div",
+          "pageScannerQuery" : "basic=clickable?containsText=Account?hidden=false",
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Mouse",
+        "subAction" : "Click",
+        "options" : [ ],
+        "object" : {
+          "type" : "raw",
+          "object" : "//*[@id=\"${DropdownId}\"]/div[2]/div/div[*]/span[text()=\"${DropdownOption}\"]/parent::div",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ],
+    "description" : null
+  } ]
+}

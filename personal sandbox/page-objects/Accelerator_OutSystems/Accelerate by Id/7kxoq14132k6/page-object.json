@@ -1,0 +1,991 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "7kxoq14132k6",
+  "title" : "Accelerate by Id",
+  "description" : "Most common OutSystems objects ready for use.",
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ {
+    "id" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147",
+    "title" : "Button via Id",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "partialID=${Button_Id}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "40efeaef-7b0b-45ac-a653-84994e0137e5",
+    "title" : "Input via Id",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "partialID=${Input_Id}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "2262197f-5f73-4cc5-a4af-b5c2c3f37099",
+    "title" : "Link via Id",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "id=${Link_Id}",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "dc3856c6-bf9c-4ca1-aba9-285c595fd6fe",
+    "title" : "Checkbox",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "partialID=${Checkbox_Id}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "87aea96d-62bf-46c3-a4eb-05d302f782cc",
+    "title" : "Feedback Message",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "className=Feedback_Message_Text",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "8e8d4928-3c31-461a-b230-4b86fca61f10",
+    "title" : "Login Button",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "tagName=button",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "innerText=Login",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "b8da6bab-012b-400f-b3b5-bb8a3dce3b5c",
+    "title" : "Input Textarea",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "partialID=${Textarea_Id}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "d2ec0565-3e92-4594-9f4c-15329b3a6927",
+    "title" : "Dropdown",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "partialID=${id}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    }, {
+      "type" : "raw",
+      "object" : "className=dropdown-display dropdown",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  } ],
+  "actionList" : [ {
+    "id" : "981408fa-c262-40ac-87f9-0d3dd44034f4",
+    "title" : "Check Checkbox",
+    "variableList" : [ {
+      "id" : "9daf6073-470a-4e7b-986a-46c14fcfd536",
+      "name" : "Checkbox_Id"
+    }, {
+      "id" : "23a3627e-cb5b-45d7-a216-8a85a560b111",
+      "name" : "Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "check",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "dc3856c6-bf9c-4ca1-aba9-285c595fd6fe"
+          }
+        },
+        "testdata" : {
+          "data" : "${Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "4eb8787e-06cc-4629-912d-c4caca34a3a9",
+    "title" : "Click Button via Id",
+    "variableList" : [ {
+      "id" : "c0f4cfb2-69df-4b1b-ac89-e4b31324b154",
+      "name" : "Button_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "f0e02c27-ee6f-43e4-892e-eb28fcb8bf59",
+    "title" : "Click Link via Id",
+    "variableList" : [ {
+      "id" : "8a058966-491c-42eb-bb06-9c3ca69d35ab",
+      "name" : "Link_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${Link_Id}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "4843f2f4-def2-4049-9729-dd4b9cd5bf3f",
+    "title" : "Click Radiobutton by Id",
+    "variableList" : [ {
+      "id" : "7bd36a9d-7760-4154-ba5d-0b198058da9e",
+      "name" : "Radio_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${Radio_Id}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "c2745bc6-ded1-48c4-9227-35f79cc6c0ac",
+    "title" : "DropdownSearch",
+    "variableList" : [ {
+      "id" : "881ea774-fe73-41d5-a24e-c6cd8725caf8",
+      "name" : "DropdownId"
+    }, {
+      "id" : "a1de5726-f1e8-47d2-9333-6c14994e762b",
+      "name" : "SearchValue"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${DropdownId}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "className=vscomp-search-input",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${SearchValue}\n",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "keypress",
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "ARROW_DOWN",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "keypress",
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "ENTER",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "a40f0143-3c0b-420f-b9d6-073ca07e63dc",
+    "title" : "Input Textarea",
+    "variableList" : [ {
+      "id" : "6eb95452-b9f2-489b-adf6-e4076f9ce127",
+      "name" : "Textarea_Id"
+    }, {
+      "id" : "adfb8d11-aa33-433e-88f6-d59f24a8983b",
+      "name" : "Input_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "b8da6bab-012b-400f-b3b5-bb8a3dce3b5c"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "7415c7bc-80e6-421f-8a2c-82b9348c9b89",
+    "title" : "Input Value via Id",
+    "variableList" : [ {
+      "id" : "0f8c132b-a737-46a5-9e51-0086ae151761",
+      "name" : "Input_Id"
+    }, {
+      "id" : "c66010eb-ee73-489f-9b3d-093036675dd5",
+      "name" : "Input_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "40efeaef-7b0b-45ac-a653-84994e0137e5"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Id}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "40efeaef-7b0b-45ac-a653-84994e0137e5"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e8234709-84c7-44dc-b4b1-42e31e9a21dc",
+    "title" : "Login",
+    "variableList" : [ {
+      "id" : "1a25e8c1-451f-4e22-b450-daf29415f8da",
+      "name" : "Username"
+    }, {
+      "id" : "e29e91a0-f1f3-455e-b19d-73a01235e262",
+      "name" : "Password"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "windowMaximize",
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=UserName",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Username}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=Password",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Password}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=btn_Login",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectNotPresent",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=Password",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "0c33c258-25cb-4ee1-aba4-f032fb618364",
+    "title" : "Select Dropdown Value",
+    "variableList" : [ {
+      "id" : "a117b07c-5c42-4a91-98b9-4007daaeef3d",
+      "name" : "id"
+    }, {
+      "id" : "fb9acad0-24c6-4153-907b-9a0c2e937f2a",
+      "name" : "ValueToSelect"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "select",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "d2ec0565-3e92-4594-9f4c-15329b3a6927"
+          }
+        },
+        "testdata" : {
+          "data" : "${ValueToSelect}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifySelected",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "d2ec0565-3e92-4594-9f4c-15329b3a6927"
+          }
+        },
+        "testdata" : {
+          "data" : "${ValueToSelect}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "1e9e01ae-808f-46e3-a67c-daaa7b401a52",
+    "title" : "Verify Button is Visible via Id",
+    "variableList" : [ {
+      "id" : "24b9eabe-f9f2-46f8-9b21-744e93245e69",
+      "name" : "Button_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "3c90beb3-3889-4034-9866-97a48cee3f16",
+    "title" : "Verify Button not Visible via Id",
+    "variableList" : [ {
+      "id" : "67c4f1bc-2d32-4b33-9dae-3d59c40cc199",
+      "name" : "Button_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyObjectNotPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "08a6cc15-baaf-4eee-8a5a-4ac76f155301",
+    "title" : "Verify Checkbox Value",
+    "variableList" : [ {
+      "id" : "0d6938d4-5505-46fd-85bc-b0cc26e1802f",
+      "name" : "Checkbox_Id"
+    }, {
+      "id" : "bf153cda-857e-4ee4-aa04-afe3e4350420",
+      "name" : "Checkbox_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyCheckbox",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "dc3856c6-bf9c-4ca1-aba9-285c595fd6fe"
+          }
+        },
+        "testdata" : {
+          "data" : "${Checkbox_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "7ae5e8f0-e0fa-489e-9352-6833e4e190a3",
+    "title" : "Verify Input Field Value via Id",
+    "variableList" : [ {
+      "id" : "eb9a288a-616c-4190-a476-1cabdc09865b",
+      "name" : "Input_Id"
+    }, {
+      "id" : "5a33a700-caa4-430c-a6ba-87ac8857c111",
+      "name" : "Input_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "40efeaef-7b0b-45ac-a653-84994e0137e5"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyValue",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "40efeaef-7b0b-45ac-a653-84994e0137e5"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "219ecf56-75ec-4eee-96a9-381061ce9dc7",
+    "title" : "Verify Input is Editable via Id",
+    "variableList" : [ {
+      "id" : "9cc4a892-9404-4bf7-a4bb-4fe60aed2da5",
+      "name" : "Input_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyEditable",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "40efeaef-7b0b-45ac-a653-84994e0137e5"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "4fcd466c-0792-4b9b-a854-c2d24829b731",
+    "title" : "Verify Input not Editable via Id",
+    "variableList" : [ {
+      "id" : "c13cfc63-79fc-450f-9f3e-a8ae417ff412",
+      "name" : "Input_Id"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyNotEditable",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "7kxoq14132k6",
+            "objectId" : "f7e427f0-ef14-4120-bd16-c49ddcb7f147"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  } ]
+}

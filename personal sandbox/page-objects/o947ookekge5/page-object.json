@@ -1,0 +1,141 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "o947ookekge5",
+  "title" : "Login",
+  "description" : null,
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ ],
+  "actionList" : [ {
+    "id" : "a5a2163d-ca14-4076-a2f1-f3a197c0044a",
+    "title" : "Login",
+    "variableList" : [ ],
+    "steps" : [ {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Mouse",
+        "subAction" : "Click",
+        "options" : [ ],
+        "object" : {
+          "type" : "raw",
+          "object" : "innerText=Sample Users",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Wait",
+        "subAction" : "Timed pause",
+        "options" : [ ],
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "1000",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Mouse",
+        "subAction" : "Click",
+        "options" : [ ],
+        "object" : {
+          "type" : "raw",
+          "object" : "innerText=Manuel Luís",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "Verify",
+        "subAction" : "Verify URL",
+        "options" : [ {
+          "name" : "Is not",
+          "value" : false
+        }, {
+          "name" : "Ignore cases",
+          "value" : true
+        }, {
+          "name" : "Contains",
+          "value" : false
+        } ],
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "https://pedro-couto.outsystemscloud.com/OrderManagement/Dashboard",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ],
+    "description" : null
+  } ]
+}

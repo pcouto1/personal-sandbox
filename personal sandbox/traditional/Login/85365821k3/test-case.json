@@ -1,0 +1,32 @@
+{
+  "steps" : null,
+  "testStepGroups" : [ {
+    "groupType" : 0,
+    "groupName" : "Click Sample Users",
+    "testSteps" : [ {
+      "version" : "2.16.3",
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : null,
+      "apiAction" : null,
+      "pageActionReference" : {
+        "pageObjectModelId" : "o947ookekge5",
+        "pageActionId" : "a5a2163d-ca14-4076-a2f1-f3a197c0044a",
+        "variables" : null,
+        "ranSteps" : null
+      },
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ],
+    "groupCondition" : null
+  } ],
+  "title" : "Login Sample User",
+  "description" : null,
+  "id" : "85365821k3",
+  "dataDrivenStorageId" : null,
+  "tags" : [ ]
+}

@@ -1,0 +1,9 @@
+{
+  "environments" : [ {
+    "id" : "3k9pgk273y6o",
+    "name" : "dev"
+  }, {
+    "id" : "6219k28qq2r3",
+    "name" : "test"
+  } ]
+}

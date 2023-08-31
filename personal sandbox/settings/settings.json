@@ -1,0 +1,30 @@
+{
+  "baseUrl" : "${endpoint}",
+  "activeEnvironmentId" : "3k9pgk273y6o",
+  "webAUTPreferences" : {
+    "browser" : "Chrome",
+    "stopWhenElementNotFound" : false
+  },
+  "securitySettings" : {
+    "certificateSettings" : {
+      "storePath" : "C:\\Program Files\\JOSF\\api\\bin\\jdk8u312-b07\\jre\\lib\\security\\cacerts",
+      "storePassword" : "changeit",
+      "storeType" : "jks",
+      "sslCheckingDisabled" : false
+    },
+    "proxySettings" : {
+      "proxyHost" : null,
+      "proxyPort" : 8080,
+      "proxyUsername" : null,
+      "proxyPassword" : null,
+      "isEnabled" : false,
+      "isEnabledForDriverDownload" : false,
+      "isEnabledForBrowserProxy" : false,
+      "isEnabledForAPIRequests" : false,
+      "isEnabledForGIT" : false,
+      "useCredentials" : false,
+      "autoDetect" : false
+    }
+  },
+  "licence" : "InsingerGilissen - Team 3\r\nZr+jmyswGzN8hsZhkNKqyrxBgREipyyuoKgQy2NLjJ3tTom+j/+Fb54NtJxtzWt/1O3byFCY45uq\r\nH3uOfX99j4x7Qf+2y5vfOS1n6EpGXVZttDRpo+u8zmrOY6bqraBA5K8DS3Usj6GB70pazCGC1A=="
+}

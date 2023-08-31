@@ -1,0 +1,13 @@
+{
+  "environmentVariables" : [ {
+    "id" : "p52qg5kry3q3",
+    "environmentId" : "6219k28qq2r3",
+    "variableId" : "x74yk758e66e",
+    "value" : "dummy"
+  }, {
+    "id" : "92y9o2q76ey7",
+    "environmentId" : "3k9pgk273y6o",
+    "variableId" : "x74yk758e66e",
+    "value" : "https://pedro-couto.outsystemscloud.com/OrderManagement/Login"
+  } ]
+}

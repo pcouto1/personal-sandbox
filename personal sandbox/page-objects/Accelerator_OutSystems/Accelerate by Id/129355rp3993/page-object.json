@@ -1,0 +1,143 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "129355rp3993",
+  "title" : "Dates",
+  "description" : null,
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ ],
+  "actionList" : [ {
+    "id" : "8d88e805-ddaf-43ba-acb6-ebacc8981677",
+    "title" : "Input DateTime",
+    "variableList" : [ {
+      "id" : "8111a849-002a-48c4-86e0-63cd3e95962c",
+      "name" : "Date"
+    }, {
+      "id" : "3df71a06-fbe1-4307-aa40-0913f57609e8",
+      "name" : "Time"
+    }, {
+      "id" : "63e9d60c-ec21-4ea6-93d3-e549524cbe26",
+      "name" : "DateTimeObjectId"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "sendKeys",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${DateTimeObjectId}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Date}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "keypress",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${DateTimeObjectId}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "ARROW_RIGHT",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "sendKeys",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${DateTimeObjectId}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Time}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e7f50867-9b93-4e02-b5a9-bd04d2aa1fcf",
+    "title" : "Input Date",
+    "variableList" : [ {
+      "id" : "4895c2cf-012d-4011-8d62-e411aba856d6",
+      "name" : "Input_Id"
+    }, {
+      "id" : "8d11d0b6-00ee-4933-bed7-3ae81fd3fdac",
+      "name" : "Date"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${Input_Id}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Date}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  } ]
+}

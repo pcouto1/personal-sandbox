@@ -1,0 +1,214 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "o94o13gxqoqe",
+  "title" : "Accelerate Feedback Messages",
+  "description" : null,
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ ],
+  "actionList" : [ {
+    "id" : "b89dd842-5916-488d-9316-1f25b6af9211",
+    "title" : "Verify Feedback Message Success",
+    "variableList" : [ {
+      "id" : "c4ab0051-e604-4e80-9f01-9c1a04ff1111",
+      "name" : "Success_Text"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : null,
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : {
+        "groupType" : 0,
+        "groupName" : "Verify Feedback Message Success",
+        "testSteps" : [ {
+          "version" : null,
+          "result" : null,
+          "message" : null,
+          "executionTimeMs" : 0,
+          "webAction" : {
+            "actionName" : "waitForObjectPresent",
+            "object" : {
+              "type" : "raw",
+              "object" : "className=feedback-message-wrapper",
+              "pageScannerQuery" : null,
+              "pageObjectReference" : null
+            },
+            "testdata" : {
+              "data" : "",
+              "type" : "text"
+            },
+            "takeScreenshot" : "0",
+            "screenshot" : null
+          },
+          "apiAction" : null,
+          "pageActionReference" : null,
+          "dataSheetReference" : null,
+          "testStepGroup" : null,
+          "contextId" : null,
+          "hasBreakpoint" : false,
+          "isDisabled" : false
+        }, {
+          "version" : null,
+          "result" : null,
+          "message" : null,
+          "executionTimeMs" : 0,
+          "webAction" : {
+            "actionName" : "verifyText",
+            "object" : {
+              "type" : "raw",
+              "object" : "className=feedback-message-wrapper",
+              "pageScannerQuery" : null,
+              "pageObjectReference" : null
+            },
+            "testdata" : {
+              "data" : "${Success_Text}",
+              "type" : "text"
+            },
+            "takeScreenshot" : "0",
+            "screenshot" : null
+          },
+          "apiAction" : null,
+          "pageActionReference" : null,
+          "dataSheetReference" : null,
+          "testStepGroup" : null,
+          "contextId" : null,
+          "hasBreakpoint" : false,
+          "isDisabled" : false
+        } ],
+        "groupCondition" : null
+      },
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "34ab1e70-2074-4f60-9f14-10562baa57a2",
+    "title" : "Verify Feedback Message Error",
+    "variableList" : [ {
+      "id" : "715265d8-6c3a-425f-8883-a43663ed6f86",
+      "name" : "Error_Text"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "raw",
+          "object" : "className=feedback-message feedback-message-error",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyText",
+        "object" : {
+          "type" : "raw",
+          "object" : "className=feedback-message feedback-message-error",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Error_Text}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "4b50b726-9cf6-49c0-860e-3faa9ded7c0f",
+    "title" : "Verify Feedback Message Info",
+    "variableList" : [ {
+      "id" : "bbc96ca6-b369-41be-ae7c-7fd038bae8f8",
+      "name" : "Info_Text"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "raw",
+          "object" : "className=Feedback_Message_Info",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyText",
+        "object" : {
+          "type" : "raw",
+          "object" : "className=Feedback_Message_Info",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Info_Text}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  } ]
+}

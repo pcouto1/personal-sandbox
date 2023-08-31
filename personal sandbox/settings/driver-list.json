@@ -1,0 +1,21 @@
+{
+  "drivers" : [ {
+    "displayName" : "Firefox",
+    "browserName" : "firefox",
+    "capabilities" : { }
+  }, {
+    "displayName" : "Edge",
+    "browserName" : "edge",
+    "capabilities" : { }
+  }, {
+    "displayName" : "Chrome",
+    "browserName" : "chrome",
+    "capabilities" : { },
+    "arguments" : [ "--remote-allow-origins=*" ]
+  }, {
+    "displayName" : "Headless Chrome",
+    "browserName" : "chrome",
+    "capabilities" : { },
+    "arguments" : [ "--headless", "--remote-allow-origins=*" ]
+  } ]
+}

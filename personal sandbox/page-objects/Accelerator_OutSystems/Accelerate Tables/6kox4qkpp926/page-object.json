@@ -1,0 +1,380 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "6kox4qkpp926",
+  "title" : "Accelerator_Tables",
+  "description" : "Most common OutSystems objects ready for use.",
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ {
+    "id" : "b22352fa-ef26-4ac2-8854-1639aa6581ac",
+    "title" : "Table via Id",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "partialID=${Table_Id}",
+      "pageScannerQuery" : "hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "raw",
+      "object" : "tagName=table",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "257f16e1-11c2-4d0f-a053-69c3960e201c",
+    "title" : "Table Header",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "className=table-header",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "tagName=tr",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "innerText=${Header_Value}",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "c9cfa82e-98d3-47bb-af1e-c04c2c0092b2",
+    "title" : "Table Cell",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "tagName=td",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "innerText=${Cell_Value}",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "f7ac9edd-2e05-4d21-b042-73e38961ce5c",
+    "title" : "Table Row",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "className=table-row",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "tagName=tr",
+      "pageScannerQuery" : "basic=readable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "raw",
+      "object" : "innerText=${Row_Value}",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  } ],
+  "actionList" : [ {
+    "id" : "a661db9d-be12-4fd8-a067-aa8b8a23d91c",
+    "title" : "Table - Verify Total Table contains Value X via Id",
+    "variableList" : [ {
+      "id" : "1bda4b9f-8cef-4e50-ab73-d7ed1f034c83",
+      "name" : "Table_Id"
+    }, {
+      "id" : "67bb9aec-d3f6-4b8b-8b04-459626784fb3",
+      "name" : "Content_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "6kox4qkpp926",
+            "objectId" : "b22352fa-ef26-4ac2-8854-1639aa6581ac"
+          }
+        },
+        "testdata" : {
+          "data" : "${Content_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "0cd22b19-43cc-4140-9b49-ce98d6552d40",
+    "title" : "Table - Verify Total Table contains Value X after Search",
+    "variableList" : [ {
+      "id" : "e2034d10-c09b-4baa-8c4a-1de93d136902",
+      "name" : "Table_Id"
+    }, {
+      "id" : "1cbcac3d-ed7f-4e74-87dd-96690cd1bec5",
+      "name" : "SearchInput_Id"
+    }, {
+      "id" : "3743ecea-3511-490c-9abf-044023c753fb",
+      "name" : "Content_ValueToCheck"
+    }, {
+      "id" : "fbf48b1f-3505-4c6f-9d16-5ae2dd71bf3d",
+      "name" : "Search_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${SearchInput_Id}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Search_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "6kox4qkpp926",
+            "objectId" : "b22352fa-ef26-4ac2-8854-1639aa6581ac"
+          }
+        },
+        "testdata" : {
+          "data" : "${Content_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "151ebdfa-468e-406b-9442-a3f1da5490ae",
+    "title" : "Verify cell by label",
+    "variableList" : [ {
+      "id" : "0ac90325-4808-4e94-8aaa-2319ed6b8972",
+      "name" : "ColumnToCheck"
+    }, {
+      "id" : "f373875b-7453-4607-81a7-2b225acd43f7",
+      "name" : "SearchRowWithValue"
+    }, {
+      "id" : "b726ef0d-2c76-4587-87bb-8df81fb1de89",
+      "name" : "Expected_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyText",
+        "object" : {
+          "type" : "raw",
+          "object" : "//tr[contains(.,'${SearchRowWithValue}')]/td[@data-header=\"${ColumnToCheck}\"]",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Expected_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "d9bbe29b-5963-4343-aa86-a1b1315582a0",
+    "title" : "Verify cell by index",
+    "variableList" : [ {
+      "id" : "26aff8cb-38d9-4a1c-94b6-107edfef9235",
+      "name" : "Column_Index"
+    }, {
+      "id" : "db1a0157-b20e-4862-a250-c1498b599d3e",
+      "name" : "Expected_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyText",
+        "object" : {
+          "type" : "raw",
+          "object" : "//td[${Column_Index}]",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Expected_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "21968ce1-c15c-43e3-86fe-117cf62808eb",
+    "title" : "Verify Cell by Label incl. Search",
+    "variableList" : [ {
+      "id" : "1c54f38d-4029-4cf6-acfa-65e1cced1f8c",
+      "name" : "Table_Id"
+    }, {
+      "id" : "551b6afb-6e4b-41f1-910a-acb46c188f88",
+      "name" : "SearchInput_Id"
+    }, {
+      "id" : "da8b9791-c877-4799-8f07-d27080a16fec",
+      "name" : "ColumnToCheck"
+    }, {
+      "id" : "1d8749bb-4959-4f62-b6b6-b4f2e2b16b62",
+      "name" : "SearchRowWithValue"
+    }, {
+      "id" : "531a230d-edc8-40ba-997b-06da00ce23f1",
+      "name" : "Expected_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "partialID=${SearchInput_Id}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Search_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForTime",
+        "object" : {
+          "type" : "raw",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "1500",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyText",
+        "object" : {
+          "type" : "raw",
+          "object" : "//tr[contains(.,'${SearchRowWithValue}')]/td[@data-header=\"${ColumnToCheck}\"]",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Expected_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  } ]
+}

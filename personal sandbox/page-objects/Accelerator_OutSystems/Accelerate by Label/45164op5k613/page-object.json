@@ -1,0 +1,627 @@
+{
+  "objectType" : "PageObjectModel",
+  "id" : "45164op5k613",
+  "title" : "Accelerate by Label",
+  "description" : "Most common OutSystems objects ready for use.",
+  "objectType" : "PageObjectModel",
+  "tags" : null,
+  "objectList" : [ {
+    "id" : "31604921-4720-4158-8965-c4a339b893e6",
+    "title" : "Button via Label",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "innerText=${ButtonLabel_Value}",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "0b25883f-7cc9-45ac-9236-adb5832f8193",
+    "title" : "Form Input via Label",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "//input[(./ancestor::div/label[text()='${Label_Value}'])]",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "ccec014c-45c0-4749-a9a4-abea0264589e",
+    "title" : "Link via LinkText",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "linkText=${Link_Text}",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "raw",
+      "object" : "tagName=a",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "060d1fd1-c80c-450a-8fa6-8861ebd2259f",
+    "title" : "Feedback Message",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "className=feedback-message-text",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "d9ba0447-181c-4891-99ff-119a5be49423",
+    "title" : "Login Button",
+    "testObjects" : [ {
+      "type" : "pageScanner",
+      "object" : "tagName=button",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    }, {
+      "type" : "pageScanner",
+      "object" : "innerText=Login",
+      "pageScannerQuery" : "basic=clickable?hidden=false",
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "ce131459-9a07-42bf-8a2e-8fbe79ecd375",
+    "title" : "Dropdown via Label",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "//select[(./ancestor::div/span[text()='${Label_Value}'])]",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "8a488a27-476d-465a-8639-f7e447267139",
+    "title" : "Input via Label",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "//input[(./ancestor::div/span[text()='${Label_Value}'])]",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  }, {
+    "id" : "93db1a7f-c8f4-4368-adf8-5d1576802639",
+    "title" : "Radiobutton via Label",
+    "testObjects" : [ {
+      "type" : "raw",
+      "object" : "//input[@value='${Radio_Label}' and @type='radio']",
+      "pageScannerQuery" : null,
+      "pageObjectReference" : null
+    } ],
+    "index" : 1
+  } ],
+  "actionList" : [ {
+    "id" : "47d6f825-815d-470c-9449-73380df6fd9d",
+    "title" : "Click Button via Label",
+    "variableList" : [ {
+      "id" : "85b8017b-a6bf-41f8-ab3f-fef3cdf6c1db",
+      "name" : "ButtonLabel_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "31604921-4720-4158-8965-c4a339b893e6"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e9eb913a-28e1-438f-8732-c81feffef18f",
+    "title" : "Click Link via InnerText",
+    "variableList" : [ {
+      "id" : "19c867b5-2a53-4afe-a9c4-f7b0550c5913",
+      "name" : "InnerText"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "innerText=${InnerText}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "66f37eee-66d9-438d-a7cf-f23112323809",
+    "title" : "Click Link via LinkText",
+    "variableList" : [ {
+      "id" : "6cd1246c-7f00-4a6e-b4fb-fe1831a983aa",
+      "name" : "Link_Text"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "linkText=${Link_Text}",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e2ef0c42-db39-4b55-b103-a2a60f8aa27e",
+    "title" : "Form Input Value via Label",
+    "variableList" : [ {
+      "id" : "4dacae02-cd9d-46f0-af8b-a4a414a5a77a",
+      "name" : "Label_Value"
+    }, {
+      "id" : "da7d989d-545c-4f29-9898-649e73823951",
+      "name" : "Input_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "0b25883f-7cc9-45ac-9236-adb5832f8193"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "f02ef9d1-9e68-4205-bb13-97fa00e1d95e",
+    "title" : "Verify Button is Visible via Label",
+    "variableList" : [ {
+      "id" : "e2271427-763b-484b-9ffc-67b68218f988",
+      "name" : "ButtonLabel_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "31604921-4720-4158-8965-c4a339b893e6"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "afd78180-215a-4793-9734-92f3dc287725",
+    "title" : "Verify Button not Visible via Label",
+    "variableList" : [ {
+      "id" : "91781e0b-8889-4571-9e22-27c964f66b73",
+      "name" : "ButtonLabel_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyObjectNotPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "31604921-4720-4158-8965-c4a339b893e6"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "89c43383-224c-45c8-9ac2-295cb770feaf",
+    "title" : "Verify Form Input Value via Label",
+    "variableList" : [ {
+      "id" : "b16c28d5-f1ae-4777-b755-d3142a8eeac8",
+      "name" : "Label_Value"
+    }, {
+      "id" : "642c4003-2062-4fcf-9f2d-4ad212f54898",
+      "name" : "Input_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "waitForObjectPresent",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "0b25883f-7cc9-45ac-9236-adb5832f8193"
+          }
+        },
+        "testdata" : {
+          "data" : "${Label_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    }, {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyValue",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "0b25883f-7cc9-45ac-9236-adb5832f8193"
+          }
+        },
+        "testdata" : {
+          "data" : "${Input_Value}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "f109df10-b83f-4389-b243-fdd8bf8f0e8b",
+    "title" : "Verify Form Input is Editable via Label",
+    "variableList" : [ {
+      "id" : "31fa2467-ad43-46c9-b572-c3ebd654bbf0",
+      "name" : "Label_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyEditable",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "0b25883f-7cc9-45ac-9236-adb5832f8193"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "3fb1bf95-3ad9-4b29-b078-7d8232cb7b7b",
+    "title" : "Verify Form Input not Editable via Label",
+    "variableList" : [ {
+      "id" : "bfe70ebc-ea02-4319-8e37-848b4d978b54",
+      "name" : "Label_Value"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "verifyNotEditable",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "0b25883f-7cc9-45ac-9236-adb5832f8193"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e15f3084-9d7a-436e-a325-875ac2816cb2",
+    "title" : "Select Dropdown Value via Label",
+    "variableList" : [ {
+      "id" : "259515e1-5733-4a53-ae70-b1a48738d21e",
+      "name" : "Label_Value"
+    }, {
+      "id" : "ec766d70-9068-4328-85a1-ecaf6b2e3b25",
+      "name" : "ValueToSelect"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "select",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "ce131459-9a07-42bf-8a2e-8fbe79ecd375"
+          }
+        },
+        "testdata" : {
+          "data" : "${ValueToSelect}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "53309b27-a326-459a-aca4-ff2e52351257",
+    "title" : "Input via Label",
+    "variableList" : [ {
+      "id" : "ec8092c8-f024-409a-a525-12c0777332dd",
+      "name" : "Label_Value"
+    }, {
+      "id" : "686ea811-8b6e-40dd-b7f4-74f52f7961de",
+      "name" : "Input"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "pageObjectReference",
+          "object" : "",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : {
+            "pageId" : "45164op5k613",
+            "objectId" : "8a488a27-476d-465a-8639-f7e447267139"
+          }
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "07f14521-8950-4e6e-8410-a3cb85bc02b0",
+    "title" : "Input Value via Label",
+    "variableList" : [ {
+      "id" : "2165be51-8af7-477d-a293-18cf4d9b5cce",
+      "name" : "Label_Value"
+    }, {
+      "id" : "c933ef03-7dc0-424d-9e1d-859d0cbb22d1",
+      "name" : "Input"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "type",
+        "object" : {
+          "type" : "raw",
+          "object" : "//input[(./ancestor::div/span[text()='${Label_Value}'])]",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "${Input}",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  }, {
+    "id" : "e2234d70-b8b8-4a31-afd1-1eb941e7dd9d",
+    "title" : "Select Radio value by Label",
+    "variableList" : [ {
+      "id" : "572ce48a-b9a4-42c1-872f-67c88b0d38b7",
+      "name" : "Radio_Label"
+    } ],
+    "steps" : [ {
+      "version" : null,
+      "result" : null,
+      "message" : null,
+      "executionTimeMs" : 0,
+      "webAction" : {
+        "actionName" : "click",
+        "object" : {
+          "type" : "raw",
+          "object" : "//input[@value='${Radio_Label}' and @type='radio']",
+          "pageScannerQuery" : null,
+          "pageObjectReference" : null
+        },
+        "testdata" : {
+          "data" : "",
+          "type" : "text"
+        },
+        "takeScreenshot" : "0",
+        "screenshot" : null
+      },
+      "apiAction" : null,
+      "pageActionReference" : null,
+      "dataSheetReference" : null,
+      "testStepGroup" : null,
+      "contextId" : null,
+      "hasBreakpoint" : false,
+      "isDisabled" : false
+    } ]
+  } ]
+}
